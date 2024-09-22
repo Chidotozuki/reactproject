@@ -15,7 +15,7 @@ const FlashDeals = ({ productItems, addToCart }) => {
         </div>
       </section>
     </>
-  );
+  ); 
 };
 
 export default FlashDeals;

@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -43,7 +45,7 @@ li{
   text-transform: capitalize;
 }
 .RText{
-  text-align: right;
+  text-align-last: right;
 }
 input, button{
   border:none;
@@ -96,6 +98,7 @@ input, button{
   cursor: pointer;
 }
 /* category */
+
 .btn-primary {
   background: #e94560;
   padding: 13px 40px;
@@ -183,5 +186,62 @@ input, button{
 }
 .product:hover .product-like {
   opacity: 1;
-}
+  cursor: pointer;
+} 
 /*---------product-----------*/
+/* --------------control-btn----------- */
+.control-btn .next,
+.control-btn .prev {
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  background: #0f3460;
+  border-radius: 50%;
+  transform: 0.5s;
+  z-index: 5;
+}
+.control-btn .prev {
+  left: -20px;
+}
+.control-btn .next {
+  right: -20px;
+}
+.control-btn .prev i,
+.control-btn .next i {
+  font-size: 20px;
+  transition: 0.5s;
+  color: #fff;
+}
+.control-btn .prev:hover,
+.control-btn .next:hover {
+  background: #e94560;
+  color: white;
+  cursor: pointer;
+}
+/* --------------control-btn----------- */
+/*----- heading -------*/
+.heading .heading-left i {
+  font-size: 30px;
+}
+.heading .heading-left h2 {
+  font-size: 25px;
+  margin: 5px;
+}
+.heading .heading-right i,
+.heading .heading-right {
+  text-align: right;
+  color: grey;
+}
+/*----- heading -------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
